@@ -167,10 +167,14 @@ button:focus {
 	background-color:black;
 	text-align: center;
 }
-.footer-copyright p{
-	margin: 0px;
-	padding: 5px;
-	color:yellow;
+@mixin copyright-paragraph($margin: 0px, $padding: 5px, $color: yellow) {
+    margin: $margin;
+    padding: $padding;
+    color: $color;
+}
+
+.footer-copyright p {
+    @include copyright-paragraph();
 }
 
 .gameBoard {
