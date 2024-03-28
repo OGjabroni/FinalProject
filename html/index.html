@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Stephen Crocker&reg; Comp2132</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i%7CMontserrat:400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/style.css">
+
+	<link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+
+	
+	<script src="../script/jquery3.7.1.js" defer="defer"></script>
+	<script src="../script/script.js" defer="defer"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		
+		<main>
+			<header>
+				<div class="metalBox spaceBelow">
+					<div class="rivet"></div>
+					<div class="rivet"></div>
+					<div class="rivet"></div>
+					<div class="rivet"></div>
+					<h1> The Hangman Game </h1>
+				</div>
+			</header>
+			<div class="gameBoard">
+				
+				<div class="actionZone">
+									
+					<div class="metalBox">
+						<div class="rivet"></div>
+						<div class="rivet"></div>
+						<div class="rivet"></div>
+						<div class="rivet"></div>
+						<div class="blackbox">
+							<img id="head01" class="lives" src="../images/head01.png" alt="head1" >
+						</div>
+					</div>
+				
+					<div class="metalBox">
+						<div class="health-bar" data-total="7" data-value="7">
+							<div class="bar">
+								<div class="hit"></div>
+							</div>
+						</div>
+					</div>
+					<button type="button" id="newGame">New Game</button>
+				</div>
+				
+				<div class="actionZone playarea">
+					<div>
+						<p id="wrongLetters" class="hidden ">Forbidden Text:<br> 
+						</p>
+					</div>
+				
+					<p id="categoryName">Category:smtg</p>
+					<div id="guessWrapper">
+					</div>
+				
+					<div id="keyboard"></div>
+					
+				</div>
+			</div>	
+			
+		
+		  </main>
+
+
+		  <div id="victoryPopup" class="popup ">
+			<div class="popup-content metalBox">
+				<img src="../images/happy.png" alt="Happy guy">
+				<div class="popup-inside">
+					<p>CONGRATULATIONS! <br>
+					You've survied this far..</p>
+					<button id="playAgainVictory">Continue?</button>
+				</div>
+				
+				
+			</div>
+		
+		</div>
+		
+		<div id="lossPopup" class="popup ">
+			<div class="popup-content metalBox">
+				<img src="../images/sad.png" alt="Sad guy">
+				<div class="popup-inside">
+					<p>OH RATS! YOU LOST!</p>
+					<button id="playAgainLoss">Play Again?</button>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		<footer>
+		
+			<div class="footer-socials">
+				<h3> The Hangman Game</h3>
+				<a class="links" href="https://www.youtube.com/watch?v=8mEP4cflrd4"> Inspired by Doom and Wolfenstien 3D</a> 
+			</div>
+			
+		</footer>
+
+			<div class="footer-copyright">
+				<p> 2024 Stephen Crocker&reg;</p>
+			</div>
+	
+	</div>
+
+	
+
+
+</body>
+</html>
